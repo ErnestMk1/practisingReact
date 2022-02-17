@@ -1,3 +1,16 @@
 .mainDiv {
-  background-color: #000;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-areas:
+  'header header header'
+  'navBar content content';
+  grid-template-columns: 1fr 1.5fr 1.5fr;
+}
+
+.contentDiv {
+  grid-area: content;
+  min-height: 50vh;
+  background-color: #409b5e;
 }
