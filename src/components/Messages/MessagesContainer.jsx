@@ -4,9 +4,9 @@ import { addMsgAC, msgAreaChangedAC } from '../../redux/messages-reducer';
 
 const mapStateToProps = (state) => {
   return {
-    people: state.people,
-    messages: state.messages,
-    messageArea: state.messageArea,
+    people: state.messagesPage.people,
+    messages: state.messagesPage.messages,
+    messageArea: state.messagesPage.messageArea,
   };
 };
 

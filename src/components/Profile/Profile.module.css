@@ -1,0 +1,40 @@
+.inputAreas {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 2vh;
+}
+
+.textarea {
+  resize: none;
+  padding: 1vh 0 0 1vh;
+}
+
+.create_post {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+  align-items: center;
+}
+
+.btn {
+  min-width: 13vw;
+  min-height: 5vh;
+  font-size: 1.3rem;
+  font-weight: 550;
+  border: 0;
+  background-color: #FFF;
+  border-radius: 1.3rem;
+  cursor: pointer;
+  transition: transform .2s;
+}
+
+.btn:hover {
+  transform: scale(1.2);
+}
+
+.contentDiv {
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}

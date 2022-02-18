@@ -41,20 +41,38 @@ const usersReducer = (state=initialState, action) => {
     case FOLLOW:
       return {
         ...state,
-        ...state.users.followed = true,
+        users: state.users.map((user) => {
+          if (user.id === action.id) {
+            return {
+              ...user,
+              followed: true,
+            };
+          }
+
+          return user;
+        }),
       };
     case UNFOLLOW:
       return {
         ...state,
-        ...state.users.followed = false,
+        users: state.users.map((user) => {
+          if (user.id === action.id) {
+            return {
+              ...user,
+              followed: false,
+            };
+          }
+
+          return user;
+        }),
       };
     default:
       return state;
   };
 };
 
-export const unfollowAC = () => ({ type: UNFOLLOW });
+export const unfollowAC = (id) => ({ type: UNFOLLOW, id });
 
-export const followAC = () => ({ type: FOLLOW });
+export const followAC = (id) => ({ type: FOLLOW, id });
 
 export default usersReducer;

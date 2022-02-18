@@ -1,0 +1,29 @@
+.mainDiv {
+  display: flex;
+  gap: 3vw;
+  align-items: center;
+}
+
+.postContent {
+  font-size: 1.5rem;
+  font-weight: 550;
+}
+
+h3 {
+  color: #ffd700;
+}
+
+.likeBtn {
+  border: 0;
+  border-radius: 1.5rem;
+  min-width: 8vw;
+  min-height: 4vh;
+  font-size: 1.3rem;
+  font-weight: 550;
+  cursor: pointer;
+  transition: transform .2s;
+}
+
+.likeBtn:hover {
+  transform: scale(1.2);
+}
