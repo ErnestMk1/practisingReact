@@ -1,0 +1,59 @@
+.maindiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.roja_name {
+  display: flex;
+  align-items: center;
+  gap: 2vw;
+}
+
+.profilePic {
+  max-width: 4vw;
+  max-height: 4vh;
+  border-radius: 60%;
+}
+
+.name {
+  cursor: pointer;
+}
+
+.name:hover {
+  color: #ffd700;
+}
+
+.wrapper {
+  display: flex;
+  gap: 25vw;
+}
+
+.textarea_btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5vh;
+}
+
+.sendBtn {
+  min-width: 13vw;
+  min-height: 5vh;
+  font-size: 1.3rem;
+  font-weight: 550;
+  border: 0;
+  background-color: #FFF;
+  border-radius: 1.3rem;
+  cursor: pointer;
+  transition: transform .2s;
+  margin-bottom: 1.5vh;
+}
+
+.sendBtn:hover {
+  transform: scale(1.2);
+}
+
+.textarea {
+  padding: 1.4vh;
+  resize: none;
+}

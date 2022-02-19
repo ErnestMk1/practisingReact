@@ -4,7 +4,7 @@ import {
   msgChangedAC,
   imgUrlAC,
   likeAC,
-  unlikeAC
+  dislikeAC
 } from '../../redux/profile-reducer';
 import { connect } from 'react-redux';
 
@@ -30,8 +30,8 @@ const mapDispatchToProps = (dispatch) => {
     liked(id) {
       dispatch(likeAC(id))
     },
-    unliked(id) {
-      dispatch(unlikeAC(id))
+    disliked(id) {
+      dispatch(dislikeAC(id))
     }
   };
 };

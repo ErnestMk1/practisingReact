@@ -1,7 +1,7 @@
 const ADD_POST = 'ADD_POST';
 const MSG_CHANGED = 'MSG_CHANGED';
 const IMG_URL = 'IMG_URL';
-const UNLIKE = 'UNLIKE';
+const DISLIKE = 'DISLIKE';
 const LIKE = 'LIKE';
 
 const initialState = {
@@ -65,7 +65,7 @@ const proflieReducer = (state=initialState, action) => {
           return post;
         }),
       };
-    case UNLIKE:
+    case DISLIKE:
       return {
         ...state,
         postsInfo: state.postsInfo.map((post) => {
@@ -108,9 +108,9 @@ export const likeAC = (id) => {
   };
 };
 
-export const unlikeAC = (id) => {
+export const dislikeAC = (id) => {
   return {
-    type: UNLIKE,
+    type: DISLIKE,
     id,
   };
 };

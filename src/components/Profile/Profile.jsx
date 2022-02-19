@@ -8,7 +8,7 @@ const Profile = (props) => {
     if (textarea.current.value.length > 0) {
       props.addPost();
     } else {
-      alert('input something first');
+      alert('input post\'s topic first');
     }
   };
 
@@ -57,7 +57,7 @@ const Profile = (props) => {
         <Posts
           postsInfo={props.postsInfo}
           liked={props.liked}
-          unliked={props.unliked}
+          disliked={props.disliked}
         />
       </div>
     </div>

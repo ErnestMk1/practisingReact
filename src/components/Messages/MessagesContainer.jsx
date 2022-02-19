@@ -15,7 +15,7 @@ const mapDispatchToProps = (dispatch) => {
     addMsg(text) {
       dispatch(addMsgAC(text));
     },
-    msgAreaChangedAC(text) {
+    msgAreaChanged(text) {
       dispatch(msgAreaChangedAC(text))
     }
   };

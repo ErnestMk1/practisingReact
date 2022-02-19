@@ -13,9 +13,9 @@ const Posts = (props) => {
 
         <div className={st.postContent}>
           <p>Theme: {post.topic}</p>
-          <h3>Likes: {post.likesCounter}</h3>
+          <h3 className={st.likebtn}>Likes: {post.likesCounter}</h3>
 
-          {post.liked ? <button className={st.likeBtn} onClick={() => {props.unliked(post.id)}}>Unlike</button> : <button className={st.likeBtn} onClick={() => {props.liked(post.id)}}>Like!)</button>}
+          {post.liked ? <button className={st.likeBtn} onClick={() => {props.disliked(post.id)}}>Dislike</button> : <button className={st.likeBtn} onClick={() => {props.liked(post.id)}}>Like!)</button>}
         </div>
       </div>
     )

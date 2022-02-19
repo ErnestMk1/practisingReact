@@ -1,0 +1,46 @@
+.mainDiv {
+  padding: 1.5rem;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.userPic {
+  max-width: 5vw;
+  border-radius: 60%;
+}
+
+.btn {
+  border: 0;
+  border-radius: 1.5rem;
+  width: 8vw;
+  min-height: 4vh;
+  font-size: 1rem;
+  font-weight: 550;
+  cursor: pointer;
+  transition: transform .2s;
+}
+
+.btn:hover {
+  transform: scale(1.2);
+}
+
+.ava_btn {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5vh;
+  padding-bottom: 3.5vh;
+  align-items: center;
+}
+
+.infoBlock {
+  display: flex;
+  justify-content: space-between;
+  min-width: 30vw;
+  border: .5rem solid;
+  margin-bottom: 3vh;
+  padding: 1.5rem;
+}

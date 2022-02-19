@@ -50,12 +50,13 @@ const messagesReducer = (state=initialState, action) => {
   switch (action.type) {
     case ADD_MSG:
       const newMsg = {
-        id: state.messages[-1].id + 1,
+        id: state.messages[state.messages.length - 1].id + 1,
         msg: action.text,
       };
       return {
         ...state,
-        ...state.messages.push(newMsg),
+        messages: [...state.messages, newMsg],
+        messageArea: '',
       };
     case MSG_AREA_CHANGED:
       return {

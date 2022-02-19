@@ -19,8 +19,8 @@ const initialState = {
       name: 'Angelina',
       status: 'sister of a brother',
       location: {
-        country: 'Izmail',
-        city: 'Ukraine',
+        country: 'Ukraine',
+        city: 'Izmail',
       },
     },
     {
@@ -29,8 +29,8 @@ const initialState = {
       name: 'Stas',
       status: 'drummer',
       location: {
-        country: 'Odessa',
-        city: 'Ukraine',
+        country: 'Ukraine',
+        city: 'Odessa',
       },
     },
   ],
